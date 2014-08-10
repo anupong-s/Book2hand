@@ -1,5 +1,5 @@
-D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Book2hand.dll.config
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Book2hand.dll
+D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Book2hand.dll.config
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Book2hand.pdb
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Antlr3.Runtime.dll
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\EntityFramework.dll
@@ -27,17 +27,17 @@ D:\GitHub\Book2hand\Book2hand\Book2hand\bin\System.Web.WebPages.Deployment.dll
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\System.Web.WebPages.dll
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\System.Web.WebPages.Razor.dll
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\WebGrease.dll
+D:\GitHub\Book2hand\Book2hand\Book2hand\bin\EntityFramework.xml
+D:\GitHub\Book2hand\Book2hand\Book2hand\bin\EntityFramework.SqlServer.xml
+D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Newtonsoft.Json.xml
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\System.Web.Helpers.xml
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\System.Web.Mvc.xml
-D:\GitHub\Book2hand\Book2hand\Book2hand\bin\System.Web.Optimization.xml
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\System.Web.Razor.xml
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\System.Web.WebPages.xml
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\System.Web.WebPages.Deployment.xml
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\System.Web.WebPages.Razor.xml
+D:\GitHub\Book2hand\Book2hand\Book2hand\bin\System.Web.Optimization.xml
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Antlr3.Runtime.pdb
-D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Newtonsoft.Json.xml
-D:\GitHub\Book2hand\Book2hand\Book2hand\bin\EntityFramework.xml
-D:\GitHub\Book2hand\Book2hand\Book2hand\bin\EntityFramework.SqlServer.xml
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Microsoft.AspNet.Identity.Core.xml
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Microsoft.AspNet.Identity.Owin.xml
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Microsoft.AspNet.Identity.EntityFramework.xml
@@ -50,6 +50,5 @@ D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Microsoft.Owin.Security.OAuth.xml
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Microsoft.Owin.Security.Google.xml
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Microsoft.Owin.Security.Twitter.xml
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-D:\GitHub\Book2hand\Book2hand\Book2hand\obj\Debug\Book2hand.csprojResolveAssemblyReference.cache
 D:\GitHub\Book2hand\Book2hand\Book2hand\obj\Debug\Book2hand.dll
 D:\GitHub\Book2hand\Book2hand\Book2hand\obj\Debug\Book2hand.pdb
