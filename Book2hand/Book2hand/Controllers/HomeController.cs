@@ -61,18 +61,18 @@ namespace Book2hand.Controllers
             return File(byteArray2, "image/png", "test.png");
         }
 
-        public FileResult Thumbnail3()
+        public FileResult Thumbnail3(string url, int w, int h)
         {
-            var w = 400;
-            var h = 250;
+            //var w = 400;
+            //var h = 250;
 
             var webClient = new WebClient();
-            byte[] imageBytes = webClient.DownloadData("https://scontent-a-sin.xx.fbcdn.net/hphotos-xpa1/t1.0-9/10525577_585183238256684_8194723171280670862_n.jpg");
+            byte[] imageBytes = webClient.DownloadData(url);
 
             var resizer = new ImageResizer(imageBytes);
-            var byteArray2 = resizer.Resize(400, 250, true, ImageEncoding.Png);
+            var byteArray2 = resizer.Resize(w, h, true, ImageEncoding.Png);
 
-            return File(byteArray2, "image/png", "test.png");
+            return File(byteArray2, "image/jpeg", "test.jpg");
         }
 
         private static byte[] ImageToByteArraybyImageConverter(System.Drawing.Image image)

@@ -1,11 +1,12 @@
-﻿
-@section scripts{
+﻿@section scripts{
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#list').click(function (event) {
+            /*$('#list').click(function (event) {
                 event.preventDefault();
                 $('#products .item').addClass('list-group-item');
-            });
+            });*/
+
+            $('#products .item').addClass('list-group-item');
 
             $('#grid').click(function (event) {
                 event.preventDefault();
@@ -27,515 +28,56 @@
 @section Styles{
 
     <style type="text/css">
-        .glyphicon {
-            margin-right: 5px;
-        }
-
-        .thumbnail {
-            margin-bottom: 20px;
-            padding: 0px;
-            -webkit-border-radius: 0px;
-            -moz-border-radius: 0px;
-            border-radius: 0px;
-        }
-
-        .item.list-group-item {
-            float: none;
-            width: 100%;
-            background-color: #fff;
+        .productbox {
+            background-color: #ffffff;
+            padding: 10px;
             margin-bottom: 10px;
+            -webkit-box-shadow: 0 8px 6px -6px #999;
+            -moz-box-shadow: 0 8px 6px -6px #999;
+            box-shadow: 0 8px 6px -6px #999;
         }
 
-            .item.list-group-item:nth-of-type(odd):hover, .item.list-group-item:hover {
-                background: #428bca;
+            .productbox img {
+                height: 250px;
             }
 
-            .item.list-group-item .list-group-image {
-                margin-right: 10px;
-            }
-
-            .item.list-group-item .thumbnail {
-                margin-bottom: 0px;
-            }
-
-            .item.list-group-item .caption {
-                padding: 9px 9px 0px 9px;
-            }
-
-            .item.list-group-item:nth-of-type(odd) {
-                background: #eeeeee;
-            }
-
-            .item.list-group-item:before, .item.list-group-item:after {
-                display: table;
-                content: " ";
-            }
-
-            .item.list-group-item img {
-                float: left;
-            }
-
-            .item.list-group-item:after {
-                clear: both;
-            }
-
-        .list-group-item-text {
-            margin: 0 0 11px;
+        .producttitle {
+            font-weight: bold;
+            padding: 5px 0 5px 0;
         }
 
+        .productprice {
+            border-top: 1px solid #dadada;
+            padding-top: 5px;
+        }
+
+        .pricetext {
+            font-weight: bold;
+            font-size: 1.4em;
+        }
     </style>
 
 }
 
-<div class="well well-sm">
-    <strong>Category Title</strong>
-    <div class="btn-group">
-        <a href="#" id="list" class="btn btn-default btn-sm">
-            <span class="glyphicon glyphicon-th-list">
-            </span>List
-        </a> <a href="#" id="grid" class="btn btn-default btn-sm">
-            <span class="glyphicon glyphicon-th"></span>Grid
-        </a>
-    </div>
-</div>
 <h2>สำนักพิมพ์ Vibulkji</h2>
-<div id="products" class="row list-group">
-    <div class="item  col-xs-4 col-lg-4">
-        <div class="thumbnail">
-            <img class="group list-group-image lazy" src="@Url.Action("thumbnail3")" alt=" " />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                    Product title
-                </h4>
-                <p class="group inner list-group-item-text">
-                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            $21.000
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="item  col-xs-4 col-lg-4">
-        <div class="thumbnail">
-            <img class="group list-group-image lazy" src="@Url.Action("thumbnail2")" alt="" />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                    Product title
-                </h4>
-                <p class="group inner list-group-item-text">
-                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            $21.000
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="item  col-xs-4 col-lg-4">
-        <div class="thumbnail">
-            <img class="group list-group-image lazy" src="" data-src="http://lorempixel.com/400/250/sports/1/" alt="" style="width: 400px;" />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                    Product title
-                </h4>
-                <p class="group inner list-group-item-text">
-                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            $21.000
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="item  col-xs-4 col-lg-4">
-        <div class="thumbnail">
-            <img class="group list-group-image lazy" src="" data-src="http://lorempixel.com/400/250/sports/6/" alt="" style="width: 400px;" />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                    Product title
-                </h4>
-                <p class="group inner list-group-item-text">
-                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            $21.000
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="item  col-xs-4 col-lg-4">
-        <div class="thumbnail">
-            <img class="group list-group-image lazy" src="" data-src="http://lorempixel.com/400/250/sports/8/" alt="" style="width: 400px;" />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                    Product title
-                </h4>
-                <p class="group inner list-group-item-text">
-                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            $21.000
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="item  col-xs-4 col-lg-4">
-        <div class="thumbnail">
-            <img class="group list-group-image lazy" src="" data-src="http://lorempixel.com/400/250/sports/3/" alt="" style="width: 400px;" />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                    Product title
-                </h4>
-                <p class="group inner list-group-item-text">
-                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            $21.000
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="col-md-4 column productbox">
+    <img src="@Url.Action("Thumbnail3", new { url = "https://scontent-a-sin.xx.fbcdn.net/hphotos-xpa1/t1.0-9/10525577_585183238256684_8194723171280670862_n.jpg", w = 360, h = 250 })" alt="เนกิมะ" class="img-responsive">
+    <div class="producttitle">Product 2</div>
+    <div class="productprice"><div class="pull-right"><a href="#" class="btn btn-danger btn-sm" role="button">BUY</a></div><div class="pricetext">£8.95</div></div>
 </div>
-<h2>สำนักพิมพ์ Zenshu</h2>
-<div id="products" class="row list-group">
-    <div class="item  col-xs-4 col-lg-4">
-        <div class="thumbnail">
-            <img class="group list-group-image lazy" src="" data-src="http://lorempixel.com/400/250/nature/0/" alt="" style="width: 400px;" />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                    Product title
-                </h4>
-                <p class="group inner list-group-item-text">
-                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            $21.000
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="item  col-xs-4 col-lg-4">
-        <div class="thumbnail">
-            <img class="group list-group-image lazy" src="" data-src="http://lorempixel.com/400/250/nature/5/" alt="" style="width: 400px;" />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                    Product title
-                </h4>
-                <p class="group inner list-group-item-text">
-                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            $21.000
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="item  col-xs-4 col-lg-4">
-        <div class="thumbnail">
-            <img class="group list-group-image lazy" src="" data-src="http://lorempixel.com/400/250/nature/1/" alt="" style="width: 400px;" />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                    Product title
-                </h4>
-                <p class="group inner list-group-item-text">
-                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            $21.000
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="item  col-xs-4 col-lg-4">
-        <div class="thumbnail">
-            <img class="group list-group-image lazy" src="" data-src="http://lorempixel.com/400/250/nature/6/" alt="" style="width: 400px;" />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                    Product title
-                </h4>
-                <p class="group inner list-group-item-text">
-                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            $21.000
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="item  col-xs-4 col-lg-4">
-        <div class="thumbnail">
-            <img class="group list-group-image lazy" src="" data-src="http://lorempixel.com/400/250/nature/8/" alt="" style="width: 400px;" />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                    Product title
-                </h4>
-                <p class="group inner list-group-item-text">
-                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            $21.000
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="item  col-xs-4 col-lg-4">
-        <div class="thumbnail">
-            <img class="group list-group-image lazy" src="" data-src="http://lorempixel.com/400/250/nature/3/" alt="" style="width: 400px;" />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                    Product title
-                </h4>
-                <p class="group inner list-group-item-text">
-                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            $21.000
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="col-md-4 column productbox">
+    <img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive">
+    <div class="producttitle">Product 2</div>
+    <div class="productprice"><div class="pull-right"><a href="#" class="btn btn-danger btn-sm" role="button">BUY</a></div><div class="pricetext">£8.95</div></div>
 </div>
-<h2>สำนักพิมพ์ Siam Inter</h2>
-<div id="products" class="row list-group">
-    <div class="item  col-xs-4 col-lg-4">
-        <div class="thumbnail">
-            <img class="group list-group-image lazy" src="" data-src="http://lorempixel.com/400/250/animals/0/" alt="" style="width: 400px;" />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                    Product title
-                </h4>
-                <p class="group inner list-group-item-text">
-                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            $21.000
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="item  col-xs-4 col-lg-4">
-        <div class="thumbnail">
-            <img class="group list-group-image lazy" src="" data-src="http://lorempixel.com/400/250/animals/5/" alt="" style="width: 400px;" />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                    Product title
-                </h4>
-                <p class="group inner list-group-item-text">
-                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            $21.000
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="item  col-xs-4 col-lg-4">
-        <div class="thumbnail">
-            <img class="group list-group-image lazy" src="" data-src="http://lorempixel.com/400/250/animals/1/" alt="" style="width: 400px;" />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                    Product title
-                </h4>
-                <p class="group inner list-group-item-text">
-                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            $21.000
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="item  col-xs-4 col-lg-4">
-        <div class="thumbnail">
-            <img class="group list-group-image lazy" src="" data-src="http://lorempixel.com/400/250/animals/6/" alt="" style="width: 400px;" />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                    Product title
-                </h4>
-                <p class="group inner list-group-item-text">
-                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            $21.000
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="item  col-xs-4 col-lg-4">
-        <div class="thumbnail">
-            <img class="group list-group-image lazy" src="" data-src="http://lorempixel.com/400/250/animals/8/" alt="" style="width: 400px;" />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                    Product title
-                </h4>
-                <p class="group inner list-group-item-text">
-                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            $21.000
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="item  col-xs-4 col-lg-4">
-        <div class="thumbnail">
-            <img class="group list-group-image lazy" src="" data-src="@Html.Action("thumbnail")" alt="" style="width: 400px;" />
-            <div class="caption">
-                <h4 class="group inner list-group-item-heading">
-                    Product title
-                </h4>
-                <p class="group inner list-group-item-text">
-                    Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                </p>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">
-                            $21.000
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="col-md-4 column productbox">
+    <img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive">
+    <div class="producttitle">Product 3</div>
+    <div class="productprice"><div class="pull-right"><a href="#" class="btn btn-danger btn-sm" role="button">BUY</a></div><div class="pricetext">£8.95</div></div>
 </div>
+<div class="col-md-4 column productbox">
+    <img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive">
+    <div class="producttitle">Product 4</div>
+    <div class="productprice"><div class="pull-right"><a href="#" class="btn btn-danger btn-sm" role="button">BUY</a></div><div class="pricetext">£8.95</div></div>
+</div>
+<div style="clear:both"></div>
