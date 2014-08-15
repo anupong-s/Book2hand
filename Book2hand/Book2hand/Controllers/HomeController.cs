@@ -26,5 +26,10 @@ namespace Book2hand.Controllers
 
             return View();
         }
+
+        public ActionResult HowToOrder()
+        {
+            return View();
+        }
     }
 }

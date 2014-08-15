@@ -52,3 +52,4 @@ D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Microsoft.Owin.Security.Twitter.xml
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\GitHub\Book2hand\Book2hand\Book2hand\obj\Debug\Book2hand.dll
 D:\GitHub\Book2hand\Book2hand\Book2hand\obj\Debug\Book2hand.pdb
+D:\GitHub\Book2hand\Book2hand\Book2hand\obj\Debug\Book2hand.csprojResolveAssemblyReference.cache

@@ -17,15 +17,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("ขายการ์ตูน รับซื้อหนังสือ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @*@Html.ActionLink("ขายการ์ตูน รับซื้อหนังสือ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+                <a href="https://www.facebook.com/profile.php?id=100002950381436" target="_blank" class="navbar-brand">
+                    ขายการ์ตูน รับซื้อหนังสือ
+                </a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("หน้าหลัก", "Index", "Home")</li>
-                    <li>@Html.ActionLink("เกี่ยวกับ", "About", "Home")</li>
-                    <li>@Html.ActionLink("ติดต่อ", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("วิธีสั่งซื้อสินค้า","HowToOrder","Home")</li>
+                    @*<li>@Html.ActionLink("เกี่ยวกับ", "About", "Home")</li>*@
+                    <li>@Html.ActionLink("ติดต่อเรา", "Contact", "Home")</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+                @*@Html.Partial("_LoginPartial")*@
             </div>
         </div>
     </div>
