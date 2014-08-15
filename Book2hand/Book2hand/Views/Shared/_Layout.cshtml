@@ -6,7 +6,7 @@
     <title>@ViewBag.Title - ขายการ์ตูน รับซื้อหนังสือ การ์ตูนมือสอง</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    @RenderSection("Styles", false)
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -44,5 +44,13 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <![endif]-->
+    <!-- Javascript -->    
+    <script src="~/Scripts/jquery.lazy.min.js"></script>
 </body>
 </html>
