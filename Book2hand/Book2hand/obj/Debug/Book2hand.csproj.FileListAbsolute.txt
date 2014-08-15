@@ -52,3 +52,8 @@ D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Microsoft.Owin.Security.Twitter.xml
 D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\GitHub\Book2hand\Book2hand\Book2hand\obj\Debug\Book2hand.dll
 D:\GitHub\Book2hand\Book2hand\Book2hand\obj\Debug\Book2hand.pdb
+D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Kaliko.ImageLibrary.dll
+D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Simple.ImageResizer.dll
+D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Simple.ImageResizer.MvcExtensions.dll
+D:\GitHub\Book2hand\Book2hand\Book2hand\bin\Kaliko.ImageLibrary.xml
+D:\GitHub\Book2hand\Book2hand\Book2hand\obj\Debug\Book2hand.csprojResolveAssemblyReference.cache
