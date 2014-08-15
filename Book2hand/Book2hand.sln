@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book2hand", "Book2hand\Book2hand.csproj", "{7027F99A-2518-44C5-A58C-35D73CDEFA36}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book2hand.Tests", "Book2hand.Tests\Book2hand.Tests.csproj", "{FE51AFEC-4845-4608-B0D7-B2254CBD6643}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book2hand.Model", "Book2hand.Model\Book2hand.Model.csproj", "{6F3A79AA-D7FF-4CFB-8D33-5D8E6281ED97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FE51AFEC-4845-4608-B0D7-B2254CBD6643}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE51AFEC-4845-4608-B0D7-B2254CBD6643}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE51AFEC-4845-4608-B0D7-B2254CBD6643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F3A79AA-D7FF-4CFB-8D33-5D8E6281ED97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F3A79AA-D7FF-4CFB-8D33-5D8E6281ED97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F3A79AA-D7FF-4CFB-8D33-5D8E6281ED97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F3A79AA-D7FF-4CFB-8D33-5D8E6281ED97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

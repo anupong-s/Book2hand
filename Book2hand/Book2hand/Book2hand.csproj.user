@@ -10,6 +10,8 @@
     <ProjectView>ShowAllFiles</ProjectView>
     <WebStackScaffolding_ViewDialogWidth>600</WebStackScaffolding_ViewDialogWidth>
     <NameOfLastUsedPublishProfile>Book2hand</NameOfLastUsedPublishProfile>
+    <WebStackScaffolding_DbContextTypeFullName>Book2hand.Model.Book2handContext</WebStackScaffolding_DbContextTypeFullName>
+    <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

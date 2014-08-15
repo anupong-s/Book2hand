@@ -171,6 +171,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ImagesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -245,6 +246,12 @@
     <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Thumbnail2.cshtml" />
+    <Content Include="Views\Home\HowToOrder.cshtml" />
+    <Content Include="Views\Categories\Create.cshtml" />
+    <Content Include="Views\Categories\Delete.cshtml" />
+    <Content Include="Views\Categories\Details.cshtml" />
+    <Content Include="Views\Categories\Edit.cshtml" />
+    <Content Include="Views\Categories\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -253,6 +260,12 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Book2hand.Model\Book2hand.Model.csproj">
+      <Project>{6f3a79aa-d7ff-4cfb-8d33-5d8e6281ed97}</Project>
+      <Name>Book2hand.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
