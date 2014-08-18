@@ -32,6 +32,17 @@ namespace Book2hand.Controllers
             return View();
         }
 
+        public ActionResult HowToOrder()
+        {
+            return View();
+        }
+
+        public ActionResult PayMoney()
+        {
+            return View();
+        }
+
+
         [Obsolete("ไม่สามารถ Crop ขนาดรูปได้ หรือกำหนดขนาดรูปใหม่ได้")]
         public string Thumbnail()
         {

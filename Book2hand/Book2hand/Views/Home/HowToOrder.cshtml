@@ -2,21 +2,44 @@
     ViewBag.Title = "วิธีการสั่งซื้อ";
 }
 
+@section Styles{
+
+    <style type="text/css">
+        .ul {
+            margin-left: 25px;
+            margin-top: 1;
+            margin-bottom: 5px;
+        }
+       
+        .headSubject {
+            padding: 10px;
+        }
+    </style>
+}
+
 <h2>@ViewBag.Title</h2>
+<hr />
 <section>
-    <p>1.จองสินค้าผ่านทาง <a href="https://www.facebook.com/profile.php?id=100002950381436&fref=ts" alt="">Facebook</a> หรือ <strong>Line ID:</strong> birdtc12 (ใครจองก่อนมีสิทธิ์ก่อน)</p>
-    <p>2.เราจะทำการคำนวณราคาสินค้าทั้งหมดแล้วแจ้งกลับไปยังคุณลูกค้า</p>
-    <p>3.โอนเงินมาที่บัญชี xxx-xxxx-xxxxx</p>
-    <p>4.แจ้งการชำระเงินผ่านทาง Facebook หรือ Line</p>
+    <ul>
+        <li>
+            <p>ทาง <a href="https://www.facebook.com/profile.php?id=100002950381436&fref=ts" alt="">Facebook</a></p>
+        </li>
+        <li>
+            <p>ทาง <strong>Line ID:</strong> birdtc12</p>
+        </li>
+        <li>
+            <p>ทางโทรศัพท์ 086-566-8606 (คุณไก่) <span style="color:red">*ถ้าติดเรียนอาจจะไม่ได้รับสายทางเราจะติดต่อกลับไป</span></p>
+        </li>
+        <li>
+            <p>เราจะทำการคำนวณราคาสินค้าทั้งหมดแล้วแจ้งกลับไปยังคุณลูกค้า</p>
+        </li>
+    </ul>
+
+    @Html.Partial("NoteView")
 </section>
 <hr />
-<h2>วิธีการรับสินค้า</h2>
+<h2>วิธีการจัดส่งและรับสินค้า</h2>
 <section>
     <p>1.ส่งทางไปรษณีย์</p>
-    <p>2.นัดเจอเพื่อรับสินค้า</p>
-</section>
-<hr/>
-<h2>วิธีการชำระเงิน</h2>
-<section>
-    <p>1.ผ่านทางบัญชี xxx-xxx-xxxxx</p>    
+    <p>2.นัดเจอเพื่อรับสินค้า </p>
 </section>

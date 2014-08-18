@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "PayMoney";
+}
+
+@section Styles{
+
+    <style type="text/css">
+        .ul {
+            margin-left: 25px;
+            margin-top: 1;
+            margin-bottom: 5px;
+        }
+    </style>
+
+}
+
+<h2>วิธีการชำระเงินค่าหนังสือ</h2>
+<hr />
+<section>
+    *** หลังจากโอนเงินเข้าบัญชีแล้วกรุณาแจ้งการชำระเงินผ่านทาง Facebook, Line หรือทำการสแกนส่งทางอีเมลได้ที่ birdtc12@hotmail.com<br /><br />
+    <ul>
+        <li>
+            <img src='~/images/bank/scb.gif' alt="scb"> ธนาคารไทยพาณิชย์ สาขาหมู่บ้านเสนานิเวศน์<br />
+            <span style='width:5px'></span>
+            <font color="#008000">
+                ชื่อบัญชี บริษัท เมทราไบต์ จำกัด (METRABYTE CO.,LTD) เลขที่บัญชี 093-235595-3<br /><br />
+            </font>
+        </li>
+        <li>
+            <img src='~/images/bank/kbank.gif' alt="kbank"> ธนาคารกสิกรไทย สาขาสี่แยกวังหิน<br />
+            <span style='width:5px'></span>
+            <font color="#008000">
+                ชื่อบัญชี บริษัท เมทราไบต์ จำกัด (METRABYTE CO.,LTD) เลขที่บัญชี 757-2-27848-9<br /><br />
+            </font>
+        </li>
+        <li>
+            <img src='~/images/bank/bbl.gif' alt="bbl"> ธนาคารกรุงเทพ ฯ สาขาถนนลาดปลาเค้า<br />
+            <span style='width:5px'></span>
+            <font color="#008000">
+                ชื่อบัญชี บริษัท เมทราไบต์ จำกัด (METRABYTE CO.,LTD)  เลขที่บัญชี 075-0-30955-1<br /><br />
+            </font>
+        </li>
+    </ul>    
+</section>
+@Html.Partial("NoteView")
